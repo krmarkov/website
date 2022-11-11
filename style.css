@@ -1,0 +1,27 @@
+body {
+	background-color: grey;
+}
+th {
+	color: yellow;
+}
+h1 {
+ 	background-color: #ccccff;
+}
+h2 {
+	color: 	 #80b3ff;
+}
+h3 {
+	color: #00ff99;
+}
+a {
+	color: red;
+}
+
+img, video {
+	width: 400px;
+	height: auto;
+}
+iframe {
+	width: 300px;
+	height: 300px;
+}
