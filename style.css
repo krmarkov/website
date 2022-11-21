@@ -12,12 +12,13 @@ h2 {
 h3 {
 	color: #00ff99;
 }
-
-img, video {
-	width: 400px;
-	height: auto;
+p {
+	text-align: center;
 }
-
+.product {
+	width: 400px;
+	height: 350px;
+}
 #mainmenu {
 	color: green;
 }
