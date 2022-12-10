@@ -54,23 +54,41 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="flex one two-500 three-1000 center">
-				<div>
-					<img class = "product" src="images/hoodie-black.jpg" alt="Черен суитчър">
-					<p>Черен суитчър<br>39.99лв</p>
+			
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-black.jpg'; document.getElementById('detailInfo').innerHTML='Черен суитчър<br>39.99лв';" class = "product" src="images/hoodie-black.jpg" alt="Черен суитчър">
+							<footer>
+								<p>Черен суитчър<br>39.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-gray.jpg'; document.getElementById('detailInfo').innerHTML='Сив суитчър<br>39.99лв';" class = "product" src="images/hoodie-gray.jpg" alt="Сив суитчър">
+							<footer>
+								<p>Сив суитчър<br>39.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-red.jpg'; document.getElementById('detailInfo').innerHTML='Червен суитчър<br>39.99лв';" class = "product" src="images/hoodie-red.jpg" alt="Червен суитчър">
+							<footer>
+								<p>Червен суитчър<br>39.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
-				<div>
-					<img class = "product" src="images/hoodie-gray.jpg" alt="Сив суитчър">
-					<p>Сив суитчър<br>39.99лв</p>
-				</div>
-
-				<div>
-					<img class = "product" src="images/hoodie-red.jpg" alt="Червен суитчър">
-					<p>Червен суитчър<br>39.99лв</p>
-				</div>
-				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
 		</div>
 	</body>

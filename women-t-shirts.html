@@ -55,22 +55,40 @@
 				</div>
 			</div>
 
-			<div class="flex one two-500 three-1000 center products">
-				<div>
-					<img class = "product" src="images/women-t-shirt-white.jpg" alt="Бяла тениска">
-					<p>Бяла тениска<br>24.99лв</p>
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-white.jpg'; document.getElementById('detailInfo').innerHTML='Бяла тениска<br>24.99лв';" class = "product" src="images/women-t-shirt-white.jpg" alt="Бяла тениска">
+							<footer>
+								<p>Бяла тениска<br>24.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-red.jpg'; document.getElementById('detailInfo').innerHTML='Червена тениска<br>19.99лв';" class = "product" src="images/women-t-shirt-red.jpg" alt="Червена тениска">
+							<footer>
+								<p>Червена тениска<br>19.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-blue.jpg'; document.getElementById('detailInfo').innerHTML='Синя тениска<br>19.99лв';" class = "product" src="images/women-t-shirt-blue.jpg" alt="Синя тениска">
+							<footer>
+								<p>Синя тениска<br>19.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
-				<div>
-					<img class = "product" src="images/women-t-shirt-red.jpg" alt="Червена тениска">
-					<p>Червена тениска<br>19.99лв</p>
-				</div>
-
-				<div>
-					<img class = "product" src="images/women-t-shirt-blue.jpg" alt="Синя тениска">
-					<p>Синя тениска<br>19.99лв</p>
-				</div>
-				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
 		</div>
 	</body>

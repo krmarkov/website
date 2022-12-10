@@ -54,25 +54,43 @@
 					</div>
 				</div>
 			</div>
-
-
-			<div class="flex one two-500 three-1000 center">
-				<div>
-					<img class = "product" src="images/purse-black.jpg" alt="Колан">
-					<p>Черна чанта<br>124.99лв</p>
+	
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/purse-black.jpg'; document.getElementById('detailInfo').innerHTML='Черна чанта<br>124.99лв';" class = "product" src="images/purse-black.jpg" alt="Черна чанта">
+							<footer>
+								<p>Черна чанта<br>124.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/purse-white.jpg'; document.getElementById('detailInfo').innerHTML='Бяла чанта<br>149.99лв';" class = "product" src="images/purse-white.jpg" alt="Бяла чанта">
+							<footer>
+								<p>Бяла чанта<br>149.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/purse-pink.jpg'; document.getElementById('detailInfo').innerHTML='Розова чанта<br>179.99лв';" class = "product" src="images/purse-pink.jpg" alt="Розова чанта">
+							<footer>
+								<p>Розова чанта<br>179.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
-				<div>
-					<img class = "product" src="images/purse-white.jpg" alt="Чанта">
-					<p>Бяла чанта<br>149.99лв</p>
-				</div>
-
-				<div>
-					<img class = "product" src="images/purse-pink.jpg" alt="Часовник">
-					<p>Розова чанта<br>179.99лв</p>
-				</div>
-				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
+			
 		</div>
 	</body>
 

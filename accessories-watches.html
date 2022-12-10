@@ -55,23 +55,40 @@
 				</div>
 			</div>
 
-
-			<div class="flex one two-500 three-1000 center">
-				<div>
-					<img class = "product" src="images/watch-apple.jpg" alt="Apple часовник">
-					<p>Apple часовник<br>424.99лв</p>
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/watch-apple.jpg'; document.getElementById('detailInfo').innerHTML='Apple часовник<br>424.99лв';" class = "product" src="images/watch-apple.jpg" alt="Apple часовник">
+							<footer>
+								<p>Apple часовник<br>554.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/watch-black.jpg'; document.getElementById('detailInfo').innerHTML='Черен часовник<br>149.99лв';" class = "product" src="images/watch-black.jpg" alt="Черен часовник">
+							<footer>
+								<p>Черен часовник<br>149.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/watch-gray.jpg'; document.getElementById('detailInfo').innerHTML='Сив часовник<br>179.99лв';" class = "product" src="images/watch-gray.jpg" alt="Сив часовник">
+							<footer>
+								<p>Сив часовник<br>179.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
-				<div>
-					<img class = "product" src="images/watch-black.jpg" alt="Черен часовник">
-					<p>Черен часовник<br>149.99лв</p>
-				</div>
-
-				<div>
-					<img class = "product" src="images/watch-gray.jpg" alt="Сив часовник">
-					<p>Сив часовник<br>179.99лв</p>
-				</div>
-				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
 
 		</div>

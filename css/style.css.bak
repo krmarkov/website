@@ -105,7 +105,7 @@ a {
 #product-container
 {
 	z-index:-1;
-	background-color:rgba(180, 180, 180, 0.5);
+	background-color:rgba(180, 180, 180, 0.7);
 	display:block; 
 	margin:0 auto;
 	float:right;

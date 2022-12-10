@@ -54,22 +54,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex one two-500 three-1000 center products">
-				<div>
-					<img class = "product" src="images/red-dress.jpg" alt="Червена рокля">
-					<p>Червена рокля<br>79.99лв</p>
-				</div>
-				
-				<div>
-					<img class = "product" src="images/blue-dress.jpg" alt="Синя рокля">
-					<p>Синя рокля<br>59.99лв</p>
-				</div>
 
-				<div>
-					<img class = "product" src="images/yellow-dress.jpg" alt="Жълта рокля">
-					<p>Жълта рокля<br>69.99лв</p>
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/red-dress.jpg'; document.getElementById('detailInfo').innerHTML='Червена рокля<br>79.99лв';" class = "product" src="images/red-dress.jpg" alt="Червена рокля">
+							<footer>
+								<p>Червена рокля<br>79.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/blue-dress.jpg'; document.getElementById('detailInfo').innerHTML='Синя рокля<br>59.99лв';" class = "product" src="images/blue-dress.jpg" alt="Синя рокля">
+							<footer>
+								<p>Синя рокля<br>59.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/yellow-dress.jpg'; document.getElementById('detailInfo').innerHTML='Жълта рокля<br>69.99лв';" class = "product" src="images/yellow-dress.jpg" alt="Жълта рокля">
+							<footer>
+								<p>Жълта рокля<br>69.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
 		</div>
 	</body>

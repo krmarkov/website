@@ -55,25 +55,41 @@
 				</div>
 			</div>
 
-
-			<div class="flex one two-500 three-1000 center">
-				<div>
-					<img class = "product" src="images/belt-brown.jpg" alt="Колан">
-					<p>Кафяв колан<br>34.99лв</p>
+			<div  class="flex two center">
+				<div class="flex one two-500 three-1000 center">
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/belt-brown.jpg'; document.getElementById('detailInfo').innerHTML='Кафяв колан<br>34.99лв';" class = "product" src="images/belt-brown.jpg" alt="Кафяв колан">
+							<footer>
+								<p>Кафяв колан<br>34.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/belt-black.jpg'; document.getElementById('detailInfo').innerHTML='Черен колан<br>29.99лв';" class = "product" src="images/belt-black.jpg" alt="Черен колан">
+							<footer>
+								<p>Черен колан<br>29.99лв</p>
+							</footer>
+						</article>
+					</div>
+					
+					<div>
+						<article class="card">
+							<img onclick="document.getElementById('bigPhoto').src='images/belt-blue.jpg'; document.getElementById('detailInfo').innerHTML='Син колан<br>24.99лв';" class = "product" src="images/belt-blue.jpg" alt="Син колан">
+							<footer>
+								<p>Син колан<br>24.99лв</p>
+							</footer>
+						</article>
+					</div>
 				</div>
 				
-				<div>
-					<img class = "product" src="images/belt-black.jpg" alt="Черен колан">
-					<p>Черен колан<br>29.99лв</p>
-				</div>
-
-				<div>
-					<img class = "product" src="images/belt-blue.jpg" alt="Син колан">
-					<p>Син колан<br>24.99лв</p>
-				</div>
-				
+				<div id="product-container">
+						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+				</div>	
 			</div>
-
 		</div>
 	</body>
 
