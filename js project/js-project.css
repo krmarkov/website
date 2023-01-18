@@ -1,0 +1,15 @@
+canvas {
+	border: 1px solid black;
+}
+body {
+	margin: 0;
+}
+#btnRed {
+	color:red;
+}
+#btnBlue {
+	color:blue;
+}
+#btnGreen {
+	color:green;
+}
