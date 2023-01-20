@@ -1,16 +1,46 @@
 let canvas = document.getElementById("myCanvas");
 let context = canvas.getContext("2d");
+
+let ta = document.getElementById("textArea");
+
+let heroSqX = -1;
+let heroSqY = -1;
+
 let color = "black";
 let sqX = 50;
-let heroSqX = 1;
-let heroSqY = 1;
 
 let btnRed = document.getElementById("btnRed");
 let btnBlue = document.getElementById("btnBlue");
 let btnGreen = document.getElementById("btnGreen");
 
+document.getElementById("run").onclick = function() 
+{
+	let input = document.getElementById("input").value;
+	let lines = input.split(' ');
+	if (Number(lines[0]) < 0 || Number(lines[0]) > 10 || Number(lines[1]) < 0 || Number(lines[1]) > 10) 
+	{
+		ta.innerHTML = "Cannot set coordinates outside the map!";
+	}
+	else 
+	{
+		heroSqX = Number(lines[0]);
+		heroSqY = Number(lines[1]);
+	}
+	drawHero();
+}
 
-let ta = document.getElementById("textArea");
+function drawHero()
+{
+	if (heroSqX < 0 || heroSqX > 11) 
+	{
+		console.log("NE");
+		context.fillRect(sqX * heroSqX, sqX * heroSqY, 50, 50);
+	}
+	else context.fillRect(sqX * heroSqX, sqX * heroSqY, 50, 50);
+	
+	canvas.focus();
+}
+
 function drawEmptyGrid() 
 {
 	for (let i = 0; i < canvas.height / sqX; i++)
@@ -22,16 +52,7 @@ function drawEmptyGrid()
 	 		context.strokeRect(j * sqX, i * sqX, sqX, sqX);
 		}
 	}
-}
-
-function drawHero()
-{
-	if (heroSqX < 0 || heroSqX > 11) 
-	{
-		console.log("NE");
-		context.fillRect(sqX * heroSqX, sqX * heroSqY, 50, 50);
-	}
-	else context.fillRect(sqX * heroSqX, sqX * heroSqY, 50, 50);
+	canvas.focus();
 }
 
 drawEmptyGrid();
@@ -43,8 +64,8 @@ btnRed.onclick = function()
 	color = "red";
 	drawEmptyGrid();
 	context.fillStyle = color;
-	drawHero()
 	ta.innerHTML = "You chose the color RED";
+	drawHero();
 }
 
 btnBlue.onclick = function()
@@ -52,8 +73,8 @@ btnBlue.onclick = function()
 	color = "blue";
 	drawEmptyGrid();
 	context.fillStyle = color;
-	drawHero()
 	ta.innerHTML = "You chose the color BLUE";
+	drawHero();
 }
 
 btnGreen.onclick = function()
@@ -61,8 +82,8 @@ btnGreen.onclick = function()
 	color = "green";
 	drawEmptyGrid();
 	context.fillStyle = color;
-	drawHero()
 	ta.innerHTML = "You chose the color GREEN";
+	drawHero();	
 }
 
 canvas.onclick = function(e)
@@ -73,7 +94,7 @@ canvas.onclick = function(e)
 	heroSqY = Math.floor(y / sqX);
 	drawEmptyGrid();
 	context.fillStyle = color;
-	drawHero()
+	drawHero();
 }
 
 document.onkeydown = function(e)
@@ -87,7 +108,8 @@ document.onkeydown = function(e)
 	}
 	drawEmptyGrid();
 	context.fillStyle = color;
-	drawHero()
+	drawHero();
+
 	console.log(e);
 }
 

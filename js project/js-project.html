@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="picnic.css">
 		<link rel="stylesheet" href="js-project.css">
+		
+		
 	</head>
 	<body>
 		<canvas id="myCanvas" width = 600 height = 600></canvas>
-		<button id="btnRed">Red</button>
-		<button id="btnBlue">Blue</button>
-		<button id="btnGreen">Green</button>
-		<p id="textArea">HI</p>
 
+		<div>
+				<button id="btnRed">Red</button>
+				<button id="btnBlue">Blue</button>
+				<button id="btnGreen">Green</button>
+		</div>
+		<p id="textArea">Enter two number between 0 and 10 in the text area and then click RUN. Those will be the coordinates where you spawn. 
+		Then use wasd or the mouse to move around the map. You can change your color from the buttons below</p>
+		<div class="flex three center">
+			<div>
+				<textarea rows = "10" cols = "60" id = "input"></textarea>
+				<button id = "run">Run</button>
+
+				
+			</div>
+			
+		
+		
+	</div>
 
 		<script src="js-project.js"></script>
 	</body>

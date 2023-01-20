@@ -13,3 +13,7 @@ body {
 #btnGreen {
 	color:green;
 }
+button {
+	background-color:gray;
+	border: 1px solid black;	
+}
