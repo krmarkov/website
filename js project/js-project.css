@@ -13,6 +13,9 @@ body {
 #btnGreen {
 	color:green;
 }
+#btnYellow{
+	color:yellow;
+}
 button {
 	background-color:gray;
 	border: 1px solid black;	
