@@ -2,7 +2,9 @@
 layout: default
 ---
 			<div  class="flex two center">
+				
 				<div class="flex one two-500 three-1000 center">
+					{% include image.html imageonclick="document.getElementById('bigPhoto').src='images/pants-brown.jpg'; document.getElementById('detailInfo').innerHTML='Бежов панталон<br>39.99лв';"  imagename="pants-brown.jpg" imagetext = "Бежов панталон<br>39.99лв" productname = "Бежов панталон" %}
 					<div>
 						<article class="card">
 							<img onclick="document.getElementById('bigPhoto').src='images/pants-brown.jpg'; document.getElementById('detailInfo').innerHTML='Бежов панталон<br>39.99лв';" class = "product" src="images/pants-brown.jpg" alt="Бежов панталон">
