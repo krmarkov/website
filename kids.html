@@ -3,32 +3,7 @@ layout: default
 ---
 
 			<div class="flex one two-500 three-1000 center">
-		
-				<div>
-					<article class="card">
-						<a href="kids-t-shirts.html"><img class = "product" src="images/kids-t-shirt-black.jpg" alt="Тениски"></a>
-						<footer>
-							<p>Тениски</p>
-						</footer>
-					</article>
-				</div>		
-				
-				<div>
-					<article class="card">
-						<a href="kids-pants.html"><img class = "product" src="images/kids-pants-red.jpg" alt="Панталони"></a>
-						<footer>
-							<p>Панталони</p>
-						</footer>
-					</article>
-				</div>		
-				
-				<div>
-					<article class="card">
-						<a href="kids-sweatshirts.html"><img class = "product" src="images/kids-hoodie-pink.jpg" alt="Суитчъри"></a>
-						<footer>
-							<p>Суитчъри</p>
-						</footer>
-					</article>
-				</div>
-				
+				{% include combined.html page="kids-t-shirts.html" imagename="kids-t-shirt-black.jpg" text="Тениски" products="Тениски" %}
+				{% include combined.html page="kids-pants.html" imagename="kids-pants-red.jpg" text="Панталони" products="Панталони" %}
+				{% include combined.html page="kids-sweatshirts.html" imagename="kids-hoodie-pink.jpg" text="Суитчъри" products="Суитчъри" %}
 			</div>

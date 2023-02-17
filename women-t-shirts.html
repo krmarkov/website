@@ -4,32 +4,9 @@ layout: default
 
 			<div  class="flex two center">
 				<div class="flex one two-500 three-1000 center">
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-white.jpg'; document.getElementById('detailInfo').innerHTML='Бяла тениска<br>24.99лв';" class = "product" src="images/women-t-shirt-white.jpg" alt="Бяла тениска">
-							<footer>
-								<p>Бяла тениска<br>24.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-red.jpg'; document.getElementById('detailInfo').innerHTML='Червена тениска<br>19.99лв';" class = "product" src="images/women-t-shirt-red.jpg" alt="Червена тениска">
-							<footer>
-								<p>Червена тениска<br>19.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/women-t-shirt-blue.jpg'; document.getElementById('detailInfo').innerHTML='Синя тениска<br>19.99лв';" class = "product" src="images/women-t-shirt-blue.jpg" alt="Синя тениска">
-							<footer>
-								<p>Синя тениска<br>19.99лв</p>
-							</footer>
-						</article>
-					</div>
+					{% include image.html imagename="women-t-shirt-white.jpg" imagetext = "Бяла тениска<br>24.99лв" productname = "Бяла тениска" %}
+					{% include image.html imagename="women-t-shirt-red.jpg" imagetext = "Червена тениска<br>19.99лв" productname = "Червена тениска" %}
+					{% include image.html imagename="women-t-shirt-blue.jpg" imagetext = "Синя тениска<br>19.99лв" productname = "Синя тениска" %}
 				</div>
 				
 				<div id="product-container">

@@ -4,32 +4,9 @@ layout: default
 
 			<div  class="flex two center">
 				<div class="flex one two-500 three-1000 center">
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-pants-red.jpg'; document.getElementById('detailInfo').innerHTML='Червени детски панталони<br>29.99лв';" class = "product" src="images/kids-pants-red.jpg" alt="Червени детски панталони">
-							<footer>
-								<p>Червени детски панталони<br>29.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-pants-blue.jpg'; document.getElementById('detailInfo').innerHTML='Сини детски панталони<br>29.99лв';" class = "product" src="images/kids-pants-blue.jpg" alt="Сини детски панталони">
-							<footer>
-								<p>Сини детски панталони<br>29.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-pants-green.jpg'; document.getElementById('detailInfo').innerHTML='Зелени детски панталони<br>29.99лв';" class = "product" src="images/kids-pants-green.jpg" alt="Зелени детски панталони">
-							<footer>
-								<p>Зелени детски панталони<br>29.99лв</p>
-							</footer>
-						</article>
-					</div>
+					{% include image.html imagename="kids-pants-red.jpg" imagetext = "Червени детски панталони<br>29.99лв" productname = "Червени детски панталони" %}
+					{% include image.html imagename="kids-pants-blue.jpg" imagetext = "Сини детски панталони<br>29.99лв" productname = "Сини детски панталони" %}
+					{% include image.html imagename="kids-pants-green.jpg" imagetext = "Зелени детски панталони<br>29.99лв" productname = "Зелени детски панталони" %}
 				</div>
 				
 				<div id="product-container">

@@ -2,33 +2,8 @@
 layout: default
 --- 
 			<div class="flex one two-500 three-1000 center">
-				<div>
-					<article class="card">
-						<a href="men-t-shirts.html"><img class = "product" src="images/t-shirt-white.jpg" alt="Бяла тениска"></a>
-						<footer>
-							<p>Тениски</p>
-						</footer>
-					</article>
-				</div>
-				
-				<div>
-					<article class="card">
-						<a href="men-pants.html"><img class = "product" src="images/pants-brown.jpg" alt="Бяла тениска"></a>
-						<footer>
-							<p>Панталони</p>
-						</footer>
-					</article>
-				</div>
-
-				<div>
-					<article class="card">
-						<a href="men-sweatshirts.html"><img class = "product" src="images/hoodie-gray.jpg" alt="Суитчър"></a>
-						<footer>
-							<p>Суитчъри</p>
-						</footer>
-					</article>
-
-				</div>
-				
+				{% include combined.html page="men-t-shirts.html" imagename="t-shirt-white.jpg" text="Бяла тениска" products="Тениски" %}
+				{% include combined.html page="men-pants.html" imagename="pants-brown.jpg" text="Панталон" products="Панталони" %}
+				{% include combined.html page="men-sweatshirts.html" imagename="hoodie-gray.jpg" text="Суитчър" products="Суитчъри" %}
 			</div>
 		

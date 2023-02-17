@@ -2,31 +2,7 @@
 layout: default
 ---
 			<div class="flex one two-500 three-1000 center">
-				<div>
-					<article class="card">
-						<a href="women-t-shirts.html"><img class = "product" src="images/women-t-shirt-white.jpg" alt="Тениски"></a>
-						<footer>
-							<p>Тениски</p>
-						</footer>
-					</article>
-				</div>						
-				
-				<div>
-					<article class="card">
-						<a href="women-pants.html"><img class = "product" src="images/women-pants-brown.jpg" alt="Панталони"></a>
-						<footer>
-							<p>Панталони</p>
-						</footer>
-					</article>
-				</div>						
-				
-				<div>
-					<article class="card">
-						<a href="women-dresses.html"><img class = "product" src="images/red-dress.jpg" alt="Рокли"></a>
-						<footer>
-							<p>Рокли</p>
-						</footer>
-					</article>
-				</div>	
-				
+				{% include combined.html page="women-t-shirts.html" imagename="women-t-shirt-white.jpg" text="Тениски" products="Тениски" %}
+				{% include combined.html page="women-pants.html" imagename="women-pants-brown.jpg" text="Панталони" products="Панталони" %}
+				{% include combined.html page="women-dresses.html" imagename="red-dress.jpg" text="Рокли" products="Рокли" %}
 			</div>

@@ -1,6 +1,6 @@
 <div>
 	<article class="card">
-		<img onclick="{{imageonclick}}" class = "product" src="images/{{ include.imagename }}" alt="{{productname}}">
+		<img onclick=" document.getElementById('bigPhoto').src='images/{{ include.imagename }}'; document.getElementById('detailInfo').innerHTML='{{include.imagetext}}';" class = "product" src="images/{{ include.imagename }}" alt="{{include.productname}}">
 		<footer>
 			<p>{{include.imagetext}}</p>
 		</footer>

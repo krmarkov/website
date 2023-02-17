@@ -3,32 +3,9 @@ layout: default
 ---
 			<div  class="flex two center">
 				<div class="flex one two-500 three-1000 center">
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-black.jpg'; document.getElementById('detailInfo').innerHTML='Черен суитчър<br>39.99лв';" class = "product" src="images/hoodie-black.jpg" alt="Черен суитчър">
-							<footer>
-								<p>Черен суитчър<br>39.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-gray.jpg'; document.getElementById('detailInfo').innerHTML='Сив суитчър<br>39.99лв';" class = "product" src="images/hoodie-gray.jpg" alt="Сив суитчър">
-							<footer>
-								<p>Сив суитчър<br>39.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/hoodie-red.jpg'; document.getElementById('detailInfo').innerHTML='Червен суитчър<br>39.99лв';" class = "product" src="images/hoodie-red.jpg" alt="Червен суитчър">
-							<footer>
-								<p>Червен суитчър<br>39.99лв</p>
-							</footer>
-						</article>
-					</div>
+					{% include image.html imagename="hoodie-black.jpg" imagetext = "Черен суитчър<br>39.99лв" productname = "Черен суитчър" %}
+					{% include image.html imagename="hoodie-gray.jpg" imagetext = "Сив суитчър<br>39.99лв" productname = "Сив суитчър" %}
+					{% include image.html imagename="hoodie-red.jpg" imagetext = "Червен суитчър<br>39.99лв" productname = "Червен суитчър" %}
 				</div>
 				
 				<div id="product-container">

@@ -3,32 +3,9 @@ layout: default
 ---
 			<div  class="flex two center">
 				<div class="flex one two-500 three-1000 center">
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-t-shirt-red.jpg'; document.getElementById('detailInfo').innerHTML='Червена детска тениска<br>14.99лв';" class = "product" src="images/kids-t-shirt-red.jpg" alt="Червена детска тениска">
-							<footer>
-								<p>Червена детска тениска<br>14.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-t-shirt-black.jpg'; document.getElementById('detailInfo').innerHTML='Супермен детска тениска<br>14.99лв';" class = "product" src="images/kids-t-shirt-black.jpg" alt="Супермен детска тениска">
-							<footer>
-								<p>Супермен детска тениска<br>14.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/kids-t-shirt-green.jpg'; document.getElementById('detailInfo').innerHTML='Зелена детска тениска<br>14.99лв';" class = "product" src="images/kids-t-shirt-green.jpg" alt="Зелена детска тениска">
-							<footer>
-								<p>Зелена детска тениска<br>14.99лв</p>
-							</footer>
-						</article>
-					</div>
+					{% include image.html imagename="kids-t-shirt-red.jpg" imagetext = "Червена детска тениска<br>14.99лв" productname = "Червена детска тениска" %}
+					{% include image.html imagename="kids-t-shirt-black.jpg" imagetext = "Супермен детска тениска<br>14.99лв" productname = "Супермен детска тениска" %}
+					{% include image.html imagename="kids-t-shirt-green.jpg" imagetext = "Зелена детска тениска<br>14.99лв" productname = "Зелена детска тениска" %}
 				</div>
 				
 				<div id="product-container">

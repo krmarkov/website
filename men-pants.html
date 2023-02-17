@@ -2,39 +2,13 @@
 layout: default
 ---
 			<div  class="flex two center">
-				
 				<div class="flex one two-500 three-1000 center">
-					{% include image.html imageonclick="document.getElementById('bigPhoto').src='images/pants-brown.jpg'; document.getElementById('detailInfo').innerHTML='Бежов панталон<br>39.99лв';"  imagename="pants-brown.jpg" imagetext = "Бежов панталон<br>39.99лв" productname = "Бежов панталон" %}
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/pants-brown.jpg'; document.getElementById('detailInfo').innerHTML='Бежов панталон<br>39.99лв';" class = "product" src="images/pants-brown.jpg" alt="Бежов панталон">
-							<footer>
-								<p>Бежов панталон<br>39.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/pants-gray.jpg'; document.getElementById('detailInfo').innerHTML='Сив панталон<br>69.99лв';" class = "product" src="images/pants-gray.jpg" alt="Сив панталон">
-							<footer>
-								<p>Сив панталон<br>69.99лв</p>
-							</footer>
-						</article>
-					</div>
-					
-					<div>
-						<article class="card">
-							<img onclick="document.getElementById('bigPhoto').src='images/jeans.jpg'; document.getElementById('detailInfo').innerHTML='Дънки<br>59.99лв';" class = "product" src="images/jeans.jpg" alt="Дънки">
-							<footer>
-								<p>Дънки<br>59.99лв</p>
-							</footer>
-						</article>
-					</div>
+					{% include image.html imagename="pants-brown.jpg" imagetext = "Бежов панталон<br>39.99лв" productname = "Бежов панталон" %}
+					{% include image.html imagename="pants-gray.jpg" imagetext = "Сив панталон<br>69.99лв" productname = "Сив панталон" %}
+					{% include image.html imagename="jeans.jpg" imagetext = "Дънки<br>59.99лв" productname = "Дънки" %}
 				</div>
-				
 				<div id="product-container">
-						<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
-						<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
+					<img id="bigPhoto" src="images/t-shirt.jpg" alt="image container" />
+					<p id="detailInfo">Детайли за продукта <br> Натиснете върху желания продукт</p>
 				</div>	
 			</div>
